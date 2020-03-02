@@ -13,7 +13,15 @@ To insert a piece, the player has to write its coordinates in the "Y X\n" format
 The game appears on the standard input.  
 
 The main goal of the game is to end up having filled the grid more than your adversary did.  
-
+  
+    
+# How To Use
+<pre>
+make  
+./resources/filler_vm -f *map_path* -p1 *player1_algorithm* -p2 *player2_algorithm*  
+</pre>
+Example  
+./resources/filler_vm -f ./resources/maps/map00 -p1 ./resources/players/superjeannot.filler -p2 ./seanseau.filler
 # Algorithm
 On the begining of each turn, a Heat Map is refreshed.  
 This heat map represents the game grid, but each case of the map has an integer value.  
